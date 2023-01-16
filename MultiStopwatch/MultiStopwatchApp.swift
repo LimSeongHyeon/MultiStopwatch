@@ -8,10 +8,13 @@
 import SwiftUI
 
 @main
-struct MultiStopwatchApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
+struct MultiStopwatchApp: App
+{
+    var body: some Scene
+	{
+        WindowGroup
+		{
+			MainTabView()
         }
     }
 }
