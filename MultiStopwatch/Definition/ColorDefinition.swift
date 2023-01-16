@@ -1,9 +1,9 @@
-//
-//  ColorDefinition.swift
-//  MultiStopwatch
-//
-//  Created by Lim on 2023/01/16.
-//
+	//
+	//  ColorDefinition.swift
+	//  MultiStopwatch
+	//
+	//  Created by Lim on 2023/01/16.
+	//
 
 import Foundation
 import SwiftUI
@@ -23,7 +23,7 @@ enum ElementColor
 	case pastelBrown
 	case pastelPurple
 	
-	// ColorScheme에 따른 element색상을 Color객체로 반환
+		// ColorScheme에 따른 element색상을 Color객체로 반환
 	func getColor(colorScheme: ColorScheme) -> Color
 	{
 		if(colorScheme == .light)
@@ -62,22 +62,22 @@ enum ElementColor
 	/// getColor메소드를 통해서 해당 색상을 반환하여 사용한다.
 enum ThemeColor
 {
-	// Background & Foreground Colors
+		// Background & Foreground Colors
 	case themeWhite
 	case themeBlack
 	
-	// TabView Background Colors
+		// TabView Background Colors
 	case lightTabColor
 	case darkTabColor
 	
-	// LightMode Pastel Colors
+		// LightMode Pastel Colors
 	case lightPastelPink
 	case lightPastelBlue
 	case lightPastelGreen
 	case lightPastelBrown
 	case lightPastelPurple
 	
-	// DarkMode Pastel Colors
+		// DarkMode Pastel Colors
 	case darkPastelPink
 	case darkPastelBlue
 	case darkPastelGreen
@@ -88,23 +88,23 @@ enum ThemeColor
 	{
 		switch self
 		{
-			case .themeWhite : return Color(#colorLiteral(red: 0.9647058844566345, green: 0.929411768913269, blue: 0.8627451062202454, alpha: 1))
-			case .themeBlack : return Color(#colorLiteral(red: 0.2083333283662796, green: 0.2083333283662796, blue: 0.2083333283662796, alpha: 1))
-			
-			case .lightTabColor: return Color(#colorLiteral(red: 0.9166666269302368, green: 0.8280849456787109, blue: 0.6607638597488403, alpha: 1))
-			case .darkTabColor: return Color(#colorLiteral(red: 0.15000000596046448, green: 0.15000000596046448, blue: 0.15000000596046448, alpha: 0.5400000214576721))
+			case .themeWhite : return Color(#colorLiteral(red: 0.9647, green: 0.9294, blue: 0.8627, alpha: 1))
+			case .themeBlack : return Color(#colorLiteral(red: 0.2083, green: 0.2083, blue: 0.2083, alpha: 1))
 				
-			case .lightPastelPink: return Color(#colorLiteral(red: 0.970833420753479, green: 0.7038542032241821, blue: 0.7322562336921692, alpha: 0.6000000238418579))
-			case .lightPastelBlue: return Color(#colorLiteral(red: 0.6262499690055847, green: 0.752174973487854, blue: 0.8999999761581421, alpha: 0.6000000238418579))
-			case .lightPastelGreen: return Color(#colorLiteral(red: 0.5946947932243347, green: 0.8374999761581421, blue: 0.5897395610809326, alpha: 0.6000000238418579))
-			case .lightPastelBrown: return Color(#colorLiteral(red: 0.8083333373069763, green: 0.6586570739746094, blue: 0.1279861330986023, alpha: 0.30000001192092896))
-			case .lightPastelPurple: return Color(#colorLiteral(red: 0.8264665603637695, green: 0.5373958349227905, blue: 0.9624999761581421, alpha: 0.30000001192092896))
+			case .lightTabColor: return Color(#colorLiteral(red: 0.9166, green: 0.82808, blue: 0.6607, alpha: 1))
+			case .darkTabColor: return Color(#colorLiteral(red: 0.1500, green: 0.1500, blue: 0.1500, alpha: 0.54))
 				
-			case .darkPastelPink: return Color(#colorLiteral(red: 0.5916666388511658, green: 0.3623958230018616, blue: 0.3867863118648529, alpha: 0.6100000143051147))
-			case .darkPastelBlue: return Color(#colorLiteral(red: 0.3623958230018616, green: 0.5091291069984436, blue: 0.5916666388511658, alpha: 0.6100000143051147))
-			case .darkPastelGreen: return Color(#colorLiteral(red: 0.4220062494277954, green: 0.5916666388511658, blue: 0.3623958230018616, alpha: 0.6100000143051147))
-			case .darkPastelBrown: return Color(#colorLiteral(red: 0.5916666388511658, green: 0.499958336353302, blue: 0.3623958230018616, alpha: 0.6100000143051147))
-			case .darkPastelPurple: return Color(#colorLiteral(red: 0.5320562720298767, green: 0.3623958230018616, blue: 0.5916666388511658, alpha: 0.6100000143051147))
+			case .lightPastelPink: return Color(#colorLiteral(red: 0.9708, green: 0.7038, blue: 0.7322, alpha: 0.6))
+			case .lightPastelBlue: return Color(#colorLiteral(red: 0.6262, green: 0.7521, blue: 0.8999, alpha: 0.6))
+			case .lightPastelGreen: return Color(#colorLiteral(red: 0.5946, green: 0.8374, blue: 0.5896, alpha: 0.6))
+			case .lightPastelBrown: return Color(#colorLiteral(red: 0.8083, green: 0.6586, blue: 0.1273, alpha: 0.3))
+			case .lightPastelPurple: return Color(#colorLiteral(red: 0.8264, green: 0.5379, blue: 0.9621, alpha: 0.3))
+				
+			case .darkPastelPink: return Color(#colorLiteral(red: 0.5916, green: 0.3623, blue: 0.3867, alpha: 0.61))
+			case .darkPastelBlue: return Color(#colorLiteral(red: 0.3623, green: 0.5091, blue: 0.5916, alpha: 0.61))
+			case .darkPastelGreen: return Color(#colorLiteral(red: 0.4220, green: 0.5916, blue: 0.3626, alpha: 0.61))
+			case .darkPastelBrown: return Color(#colorLiteral(red: 0.5916, green: 0.4999, blue: 0.3626, alpha: 0.61))
+			case .darkPastelPurple: return Color(#colorLiteral(red: 0.5320, green: 0.3623, blue: 0.5958, alpha: 0.61))
 		}
 	}
 }
